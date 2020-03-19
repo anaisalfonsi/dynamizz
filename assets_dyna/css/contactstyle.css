@@ -1,0 +1,512 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,400,500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+*{
+  font-family: 'Raleway', sans-serif;
+  margin:0px;
+}
+body{
+  display:flex;
+  flex-direction: column;
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045_960_720.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/*HEADER */
+
+header {
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  background-color: rgba(254, 201, 179, 1);
+  top: 0;
+  z-index: 2;
+}
+
+.logo {
+  width: 200px;
+}
+header a .logo-bg{
+  visibility: hidden;
+}
+
+nav ul li a {
+  z-index: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.navBox li a:hover {
+  color: rgba(252, 76, 2, 1);
+  /*background: linear-gradient(160deg, rgba( 229, 243, 244, 1) 37%, rgba(254,201,179, 1) 37%);*/
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #b37cb5);
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+nav li {
+  align-items: center;
+  list-style-type: none;
+}
+
+li {
+  float: left;
+}
+
+.navBox a {
+  color: rgba(0, 142, 151, 1);
+  text-align: center;
+  text-decoration: none;
+}
+
+h2 {
+  padding: 20px;
+  font-size: 1.6em;
+}
+
+p {
+  margin-left: 20px;
+  color: #613e6e;
+  font-size: 1.2em;
+}
+
+nav li {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.3em;
+  float: left;
+  justify-content: bottom;
+  white-space: nowrap;
+}
+
+.navBar {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  background-color: rgba(229, 243, 244, 1);
+  width: 100%;
+  height: 100px;
+  margin-top: -20px;
+  display: flex;
+}
+
+#linkNav {
+  margin-top: 40px;
+}
+
+
+@media screen and (max-width: 920px) {
+  .navBox {
+    visibility: hidden;
+  }
+
+  .bg {
+    visibility: visible;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  #homeImg {
+    margin-top: 60px;
+  }
+  .navBox .nav-position .logo-bg{
+    position: absolute;
+    left: 30px;
+    top:15px;
+    width: 100px;
+    z-index: 1000;
+    visibility: visible;
+    display: block;
+   }
+
+  .bg input + label {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    height: 20px;
+    width: 15px;
+    z-index: 5;
+  }
+  
+  .bg input + label span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+    display: block;
+    transition: 0.1s;
+    background-color:#FC4C02;
+  }
+
+  .bg input + label span:first-child {
+    top: 4px;
+  }
+  .bg input + label span:last-child {
+    top: 16px;
+  }
+  .bg label:hover {
+    cursor: pointer;
+  }
+  .bg input:checked + label span {
+    opacity: 0;
+    top: 50%;
+  }
+  .bg input:checked + label span:first-child {
+    opacity: 1;
+    transform: rotate(405deg);
+  }
+  .bg input:checked + label span:last-child {
+    opacity: 1;
+    transform: rotate(-405deg);
+  }
+  .bg input ~ nav {
+    background: rgba(229, 243, 244, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+    transition: 0.1s;
+    transition-delay: 0.1s;
+    overflow: hidden;
+  }
+  .bg input ~ nav > ul {
+    position: absolute;
+    margin-top: 40px;
+    left: 20%;
+    right: 20%;
+  }
+  .bg input ~ nav > ul > li {
+    opacity: 0;
+    transition: 0.1s;
+    transition-delay: 0s;
+  }
+
+  .bg input ~ nav > ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: sans-serif;
+    display: block;
+    padding: 50px;
+    font-family: 'Raleway', sans-serif;
+    color: #008e97;
+    padding: 0;
+    font-size: 0.7em;
+  }
+
+  .bg input:checked ~ nav {
+    height: 60%;
+    transition-delay: 0s;
+  }
+  .bg input:checked ~ nav > ul > li {
+    opacity: 1;
+    transition-delay: 0.1s;
+  }
+
+  .bg nav ul li a:hover {
+    color: #005778;
+  }
+
+  ul {
+    list-style-type: none;
+    white-space: nowrap;
+  }
+
+  #burger {
+    visibility: hidden;
+  }
+}
+
+
+h1 {
+  font-size: xx-large;
+  display: block;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 200px auto;
+  /* valeur a mettre a element en dessous navbar */
+  padding: 1em;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.form input,
+textarea,
+.button {
+
+  width: 75%;
+  box-sizing: border-box;
+  margin: 10px auto;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: inset 5px 10px 12px 2px;
+}
+
+.statue {
+  margin: 10px 12.5%;
+  padding: 1em;
+  width: 75%;
+  border-radius: 10px;
+}
+
+button {
+  margin: 10 auto;
+  padding: 10 auto;
+  display: block;
+  justify-content: space-around;
+}
+
+.button {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  background-color: linear-gradient(rgba(252, 76, 2, .5), rgba(0, 87, 120, .5));
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px 5px black;
+  transition-property: inset 5s;
+  transition-duration: 5s;
+  
+}
+
+.button:hover,
+.button:focus {
+  color: black;
+  width: 50%;
+
+}
+
+.button:active {
+  transform: translateX(4px);
+  box-shadow: 0 5px whitesmoke;
+  
+}
+#linkNav {
+  margin-top: 40px;
+}
+
+#homeImg {
+  margin-top: 110px;
+  width: 100%;
+  height: 40%;
+}
+
+.AboutUs {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(252, 76, 2, 1);
+  width: 100%;
+}
+
+.footerBar {
+  list-style-type: none;
+}
+
+.footerBar li a {
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer,
+.footerBar {
+  justify-content: left;
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  padding: 10px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: rgba(25, 7, 0, 1);
+}
+
+.footer-social-icons {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: center;
+  
+}
+
+.social-icon {
+  color: #fff;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.social-icons li {
+  vertical-align: top;
+  display: inline-flex;
+  padding: 5px;
+}
+
+.social-icons a {
+  color: rgba(25, 7, 0, 1);
+  text-decoration: none;
+}
+
+.fa-facebook {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
+}
+
+.fa-facebook:hover {
+  background-color: #3d5b99;
+  color: white;
+}
+
+.fa-twitter {
+  padding: 10px 12px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
+}
+
+.fa-twitter:hover {
+  background-color: #00aced;
+  color: white;
+}
+
+.fa-instagram {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
+}
+
+.fa-instagram:hover {
+  background-color: #b37cb5;
+  color: white;
+}
+
+.fa-youtube {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
+}
+
+.fa-youtube:hover {
+  background-color: #e64a41;
+  color: white;
+}
+
+.fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
+}
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+  color: white;
+}
+
+.fa-github {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
+}
+
+.fa-github:hover {
+  background-color: #5a32a3;
+  color: white;
+}
+
+@media screen and (max-width:600px){
+  footer{
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding:0 0 0 0;
+    
+  }
+
+  .form input, textarea, .button {
+    width: 75%;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: inset 5px 10px 12px 2px;
+}
+
+.form {
+  margin: 70px auto;
+}
+
+.footer-social-icons{
+  justify-content: center;
+  
+}
+
+ul, .social-icons {
+  padding:0 0 0 0;
+  align-items:center ;
+}
+}

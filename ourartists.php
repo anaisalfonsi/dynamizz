@@ -1,75 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="AnaïsAlfonsi,VeronicaPatou,CelineCottier,TristanManaut,NicolasRegnier,MamedGohabur">
-   <!-- <link rel="stylesheet" href="ourartists.css"> -->
-    <link rel="stylesheet" href="/AllPagesFolder/Carousel/ourartists.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <title>Our Artists</title>
-</head>
-<body>
-    <header>
-        <div class="bg">
-          <div class="logo"></div>
-          <input id="burger" type="checkbox" />
-  
-          <label for="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <div class="background"></div>
-  
-          <nav>
-            <ul>
-              <li><a href="/AllPagesFolder/home/homeresp.html" style="text-decoration:none">Home</a></li>
-              <li>
-                <a href="/AllPagesFolder/Carousel/ourartists.html" style="text-decoration:none">Discover Artists</a>
-              </li>
-              <li><a href="/AllPagesFolder/PageArtiste/portrait.html" style="text-decoration:none">Artists Page</a></li>
-              <li><a href="/AllPagesFolder/form/contact.html" style="text-decoration:none">Contact Us</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="navBox">
-          <nav>
-            <div class="nav-position">
-              <ul>
-                <li><a href="/AllPagesFolder/home/homeresp.html">
-                  <img src="/AllPagesFolder/assets/logo-200x66-orange-L.png" alt="Pixie Wilder" class="logo-bg"/>
-                </a>
-              </li>
-            </ul>
-              <ul class="navBar">
-                <li>
-                  <img 
-                    src="/AllPagesFolder/assets/logo-200x66-orange-L.png"
-                    alt="Pixie Wilder"
-                    class="logo"
-                  />
-                </li>
-                <li id="linkNav">
-                  <a href="/AllPagesFolder/home/homeresp.html" style="text-decoration:none">Home</a>
-                </li>
-                <li id="linkNav">
-                  <a href="/AllPagesFolder/Carousel/ourartists.html" style="text-decoration:none"
-                    >Discover Artists</a
-                  >
-                </li>
-                <li id="linkNav">
-                  <a href="/AllPagesFolder/PageArtiste/portrait.html" style="text-decoration:none">Artist Page</a>
-                </li>
-                <li id="linkNav">
-                  <a href="/AllPagesFolder/form/contact.html" style="text-decoration:none">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
-    <a href="/AllPagesFolder/PageArtiste/portrait.html">
+<?php include('layouts/header.php'); ?>
+
+    <a href="portrait.php">
         <section class="first">
             <div class="carousel">
                 <div id="slider">
@@ -152,23 +83,4 @@
             <p>Being a photographer is first and foremost a passion. The one in the photo. Being a professional photographer also means having the rare privilege of being able to live from your passion.From film, I went digital, from color I evolved into light… In all its states, soft and homogeneous, white and hard, direct or reflected, subdued, low, blue… I see it everywhere , even in a shadow.</p>
         </div>
     </section>
-    <footer>
-      <!--<p></p>-->
-      <ul class="footerBar">
-          <li><a href="#AboutUs">About Us</a></li>
-          <li><a href="#FAQ">FAQ</a></li>
-      </ul>
-      <div class="footer-social-icons">
-          <ul class="social-icons">
-              <li><a href="https://fr-fr.facebook.com/WildCodeSchool/" class="social-icon" target="_blank"> <i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/wildcodeschool" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.instagram.com/wildcodeschool/" class="social-icon" target="_blank"> <i class="fa fa-instagram"></i></a></li>
-              <li><a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw" class="social-icon" target="_blank"> <i class="fa fa-youtube"></i></a></li>
-              <li><a href="https://fr.linkedin.com/school/wild-codes-chool/" class="social-icon" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://github.com/WildCodeSchool" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a></li>
-          </ul>
-      </div>
-    </footer>
-    
-</body>
-</html>
+    <?php include('layouts/footer.php'); ?>
