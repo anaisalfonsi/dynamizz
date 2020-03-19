@@ -1,0 +1,264 @@
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap');
+ */
+*,
+html,
+body,
+section,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+article,
+figure,
+figcaption,
+a {
+    padding-left: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: content-box;
+    color: #001118;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+
+.portrait {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.portrait article figure {
+    width: 50%;
+    margin: auto;
+}
+
+
+figure .photo {
+    margin-top: 10%;
+    width: 20%
+}
+
+.description {
+    font-weight: 300;
+    text-align: justify;
+    font-size: 1.2em;
+
+}
+
+.prestation_title {
+    padding-bottom: 40px;
+    clear: both;
+    text-align: center;
+    color: #008E97;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.presta {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: #cce8ea;
+    height: auto;
+}
+
+.listing {
+    width: 15%;
+    display: block;
+}
+
+.listing ul {
+    padding-left: 10%;
+
+}
+
+.listing ul li {
+    width: 10%;
+    padding: 5px 0px;
+    font-size: 1.2em;
+}
+
+.btn {
+    width: 80%;
+    display: block;
+    margin: auto;
+    background-color: #cce8ea;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.btn-contact {
+    text-decoration: none;
+}
+
+.btn-contact {
+    display: block;
+    margin: auto;
+    background-color: #FC4C02;
+    color: #fff;
+    height: 50px;
+    width: 120px;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.btn-contact:hover {
+    background-color: #008e97;
+    color: #fff;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.galerie {
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+    margin: 5% 10%;
+    text-align: center;
+}
+
+.photogal {
+    display: inline-block;
+    width: 23%;
+    padding-left: 1%;
+}
+
+.galerie img {
+    width: 350px;
+    height: 300px;
+}
+
+.photogal:hover {
+    filter: saturate(7);
+}
+
+
+@media only screen and (min-width:360px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        box-sizing: content-box;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .portrait {
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .portrait article figure {
+        justify-content: center;
+        width: 60%;
+        padding: 10px;
+        align-items: center;
+    }
+
+    figure .photo {
+        width: 70%;
+        margin-top: 120px;
+        margin-bottom: 30px;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    .description {
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    .prestation_title {
+        padding-top: 30px;
+        padding-bottom: 40px;
+
+    }
+
+    .presta {
+        display: flex;
+        width: 95%;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .listing {
+        display: flex;
+    }
+
+    .listing ul {
+        padding: 5px;
+
+    }
+
+    .listing ul li {
+        width: 70%;
+        font-size: 1em;
+    }
+
+    .btn {
+        display: flex;
+        width: 95%;
+        justify-self: center;
+    }
+
+    .btn-contact {
+        margin-top: 20px;
+
+    }
+
+    .galerie {
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        padding: 0;
+    }
+
+    .galerie img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .photogal {
+        width: 30%;
+    }
+
+
+
+}
