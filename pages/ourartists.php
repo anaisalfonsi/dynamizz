@@ -1,5 +1,6 @@
 <?php include('../layouts/header.php'); ?>
 
+    <div class ="ourartistspage">
     <a href="portrait.php">
         <section class="first">
             <div class="carousel">
@@ -83,4 +84,5 @@
             <p>Being a photographer is first and foremost a passion. The one in the photo. Being a professional photographer also means having the rare privilege of being able to live from your passion.From film, I went digital, from color I evolved into light… In all its states, soft and homogeneous, white and hard, direct or reflected, subdued, low, blue… I see it everywhere , even in a shadow.</p>
         </div>
     </section>
+</div>
     <?php include('../layouts/footer.php'); ?>

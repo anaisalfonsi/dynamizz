@@ -1,7 +1,7 @@
 <?php include('../layouts/header.php'); ?>
 
     <div class="form">
-        <h1>Contact us</h1>
+        <h1 class ="contactus">Contact us</h1>
         <input type="email" placeholder="Your Mail">
         <input type="Name" placeholder="Your Name">
         <select class="statue">

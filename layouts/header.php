@@ -7,12 +7,7 @@
     <meta name="author" content="AnaïsAlfonsi,VeronicaPatou,CelineCottier,TristanManaut,NicolasRegnier,MamedGohabur">
     <meta name="description" content="Page d'accueil">
     <title>🦄 Home - Pixie Wilder 🦄</title>
-    <link rel="stylesheet" href="../assets_dyna/css/homestyleresp.css">
-    <link rel="stylesheet" href="../assets_dyna/css/ourartists.css">
-    <link rel="stylesheet" href="../assets_dyna/css/style-portrait.css">
-    <link rel="stylesheet" href="../assets_dyna/css/Projet1style.css">
-    <link rel="stylesheet" href="../assets_dyna/css/contactstyle.css">
-    <link rel="stylesheet" href="../assets_dyna/css/css2.css">
+    <link rel="stylesheet" href="../assets_dyna/css/all.css">
 </head>
 
 <body>
