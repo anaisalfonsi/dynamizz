@@ -31,9 +31,9 @@
             <nav>
                 <ul>
                     <li><a href="../homeresp.php" style="text-decoration:none">Home</a></li>
-                    <li><a href="../ourartists.php" style="text-decoration:none">Discover Artists</a></li>
-                    <li><a href="../portrait.php" style="text-decoration:none">Artists Page</a></li>
-                    <li><a href="../contact.php" style="text-decoration:none">Contact Us</a></li>
+                    <li><a href="../pages/ourartists.php" style="text-decoration:none">Discover Artists</a></li>
+                    <li><a href="../pages/portrait.php" style="text-decoration:none">Artists Page</a></li>
+                    <li><a href="../pages/contact.php" style="text-decoration:none">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,13 +55,13 @@
                             <a href="../homeresp.php" style="text-decoration:none">Home</a>
                         </li>
                         <li id="linkNav">
-                            <a href="../ourartists.php" style="text-decoration:none">Discover Artists</a>
+                            <a href="../pages/ourartists.php" style="text-decoration:none">Discover Artists</a>
                         </li>
                         <li id="linkNav">
-                            <a href="../portrait.php" style="text-decoration:none">Artist Page</a>
+                            <a href="../pages/portrait.php" style="text-decoration:none">Artist Page</a>
                         </li>
                         <li id="linkNav">
-                            <a href="../contact.php" style="text-decoration:none">Contact Us</a>
+                            <a href="../pages/contact.php" style="text-decoration:none">Contact Us</a>
                         </li>
                     </ul>
                 </div>

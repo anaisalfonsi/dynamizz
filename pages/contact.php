@@ -1,4 +1,4 @@
-<?php include('layouts/header.php'); ?>
+<?php include('../layouts/header.php'); ?>
 
     <div class="form">
         <h1>Contact us</h1>
@@ -26,4 +26,4 @@
         <div><button class="button">Click Me</button></div>
     </div>
     </form>
-    <?php include('layouts/footer.php'); ?>
+    <?php include('../layouts/footer.php'); ?>
