@@ -33,4 +33,4 @@
         <div><button class="button" name ="submit">Click Me</button></div>
     </div>
     </form>
-    <?php include('layouts/footer.php'); ?>
+    <?php include('../layouts/footer.php'); ?>

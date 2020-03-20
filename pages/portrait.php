@@ -1,4 +1,4 @@
-<?php include('layouts/header.php'); ?>
+<?php include('../layouts/header.php'); ?>
 
   <main class="main">
     <section class="portrait">
@@ -54,4 +54,4 @@
     </section>
 
 
-    <?php include('layouts/footer.php'); ?>
+    <?php include('../layouts/footer.php'); ?>

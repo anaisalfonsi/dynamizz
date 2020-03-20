@@ -7,12 +7,7 @@
     <meta name="author" content="AnaïsAlfonsi,VeronicaPatou,CelineCottier,TristanManaut,NicolasRegnier,MamedGohabur">
     <meta name="description" content="Page d'accueil">
     <title>🦄 Home - Pixie Wilder 🦄</title>
-    <link rel="stylesheet" href="../assets_dyna/css/homestyleresp.css">
-    <link rel="stylesheet" href="../assets_dyna/css/ourartists.css">
-    <link rel="stylesheet" href="../assets_dyna/css/style-portrait.css">
-    <link rel="stylesheet" href="../assets_dyna/css/Projet1style.css">
-    <link rel="stylesheet" href="../assets_dyna/css/contactstyle.css">
-    <link rel="stylesheet" href="../assets_dyna/css/css2.css">
+    <link rel="stylesheet" href="../assets_dyna/css/all.css">
 </head>
 
 <body>
@@ -31,9 +26,9 @@
             <nav>
                 <ul>
                     <li><a href="../homeresp.php" style="text-decoration:none">Home</a></li>
-                    <li><a href="../ourartists.php" style="text-decoration:none">Discover Artists</a></li>
-                    <li><a href="../portrait.php" style="text-decoration:none">Artists Page</a></li>
-                    <li><a href="../contact.php" style="text-decoration:none">Contact Us</a></li>
+                    <li><a href="../pages/ourartists.php" style="text-decoration:none">Discover Artists</a></li>
+                    <li><a href="../pages/portrait.php" style="text-decoration:none">Artists Page</a></li>
+                    <li><a href="../pages/contact.php" style="text-decoration:none">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,13 +50,13 @@
                             <a href="../homeresp.php" style="text-decoration:none">Home</a>
                         </li>
                         <li id="linkNav">
-                            <a href="../ourartists.php" style="text-decoration:none">Discover Artists</a>
+                            <a href="../pages/ourartists.php" style="text-decoration:none">Discover Artists</a>
                         </li>
                         <li id="linkNav">
-                            <a href="../portrait.php" style="text-decoration:none">Artist Page</a>
+                            <a href="../pages/portrait.php" style="text-decoration:none">Artist Page</a>
                         </li>
                         <li id="linkNav">
-                            <a href="../contact.php" style="text-decoration:none">Contact Us</a>
+                            <a href="../pages/contact.php" style="text-decoration:none">Contact Us</a>
                         </li>
                     </ul>
                 </div>
