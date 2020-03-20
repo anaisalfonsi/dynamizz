@@ -3,6 +3,9 @@
 
     if(isset($_POST)){
         $errors = [];
+        $message = $_POST['message'];
+        $pickcontact = $_POST['pickcontact'];
+        $pickrequest = $_POST['pickrequest'];
             if(empty($_POST['email'])){
                 $errors ['email'] = "❗️The field email is required";
             }
@@ -29,16 +32,18 @@
                             <?php if(isset($errors['email'])) echo $errors['email']; ?> 
                         </code>
                     </p>
-                <input type="email" placeholder="Your Mail" name="email">
+                <input type="email" placeholder="Your Mail" name="email" value=<?php if(isset($_POST['email'])) echo $_POST['email']; ?>>
                     <p class = "formerror">
                         <code>
                             <?php if(isset($errors ['name'])) echo $errors['name'] ?>
                         </code>
                     </p>
-                <input type="Name" placeholder="Your Name" name ="name">
+                <input type="Name" placeholder="Your Name" name ="name" value=<?php if(isset($_POST['name'])) echo $_POST['name']; ?>>
                     <p class = "formerror">
                         <code>
-                            <?php if(isset($errors ['pickcontact'])) echo $errors['pickcontact'] ?>
+                            <?php 
+                            if(isset($errors ['pickcontact'])) echo $errors['pickcontact'];
+                            ?>
                         </code>
                     </p>
                 <select class="statue" name ="pickcontact">
@@ -69,7 +74,7 @@
                             <?php if(isset($errors ['message'])) echo $errors['message'] ?>
                         </code>
                     </p>
-                <textarea placeholder="Your message" name="message"></textarea>
+                <textarea placeholder="Your message" name="message" value="<?php if (isset($message)) { echo $message; } ?>"><?php if (isset($message)) { echo $message; } ?></textarea>
                     <div><button class="button" name ="submit">Click Me</button></div>
                     </div>
             </form>      
