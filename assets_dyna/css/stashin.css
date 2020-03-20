@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,500,700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  background-color: rgba(254, 201, 179, 1);
+  top: 0;
+  z-index: 2;
+}
+
+.logo {
+  width: 200px;
+}
+
+header a .logo-bg {
+  visibility: hidden;
+}
+
+nav ul li a {
+  z-index: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.navBox li a:hover {
+  color: rgba(252, 76, 2, 1);
+  /*background: linear-gradient(160deg, rgba( 229, 243, 244, 1) 37%, rgba(254,201,179, 1) 37%);*/
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #b37cb5);
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+nav li {
+  align-items: center;
+  list-style-type: none;
+}
+
+li {
+  float: left;
+}
+
+.navBox a {
+  color: rgba(0, 142, 151, 1);
+  text-align: center;
+  text-decoration: none;
+}
+
+h2 {
+  padding: 20px;
+  font-size: 1.6em;
+}
+
+p {
+  margin-left: 20px;
+  color: #613e6e;
+  font-size: 1.2em;
+}
+
+nav li {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.3em;
+  float: left;
+  justify-content: bottom;
+  white-space: nowrap;
+}
+
+.navBar {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  background-color: rgba(229, 243, 244, 1);
+  width: 100%;
+  height: 100px;
+  margin-top: -20px;
+  display: flex;
+}
+
+#linkNav {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 920px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navBox {
+    visibility: hidden;
+  }
+
+  .bg {
+    visibility: visible;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  #homeImg {
+    margin-top: 60px;
+  }
+
+  .navBox .nav-position .logo-bg {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    width: 100px;
+    z-index: 1000;
+    visibility: visible;
+    display: block;
+  }
+
+  .bg input+label {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    height: 20px;
+    width: 15px;
+    z-index: 5;
+  }
+
+  .bg input+label span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+    display: block;
+    transition: 0.1s;
+    background-color: #FC4C02;
+  }
+
+  .bg input+label span:first-child {
+    top: 4px;
+  }
+
+  .bg input+label span:last-child {
+    top: 16px;
+  }
+
+  .bg label:hover {
+    cursor: pointer;
+  }
+
+  .bg input:checked+label span {
+    opacity: 0;
+    top: 50%;
+  }
+
+  .bg input:checked+label span:first-child {
+    opacity: 1;
+    transform: rotate(405deg);
+  }
+
+  .bg input:checked+label span:last-child {
+    opacity: 1;
+    transform: rotate(-405deg);
+  }
+
+  .bg input~nav {
+    background: rgba(229, 243, 244, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+    transition: 0.1s;
+    transition-delay: 0.1s;
+    overflow: hidden;
+  }
+
+  .bg input~nav>ul {
+    position: absolute;
+    margin-top: 40px;
+    left: 20%;
+    right: 20%;
+  }
+
+  .bg input~nav>ul>li {
+    opacity: 0;
+    transition: 0.1s;
+    transition-delay: 0s;
+  }
+
+  .bg input~nav>ul>li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: sans-serif;
+    display: block;
+    padding: 50px;
+    font-family: 'Raleway', sans-serif;
+    color: #008e97;
+    padding: 0;
+    font-size: 0.7em;
+  }
+
+
+  .bg input:checked~nav {
+    height: 60%;
+    transition-delay: 0s;
+  }
+
+  .bg input:checked~nav>ul>li {
+    opacity: 1;
+    transition-delay: 0.1s;
+  }
+
+  .bg nav ul li a:hover {
+    color: #005778;
+  }
+
+  ul {
+    list-style-type: none;
+    /*white-space: nowrap;*/
+  }
+
+  #burger {
+    visibility: hidden;
+  }
+}
+
+.accueil {
+  background-image: url("https://i2.wp.com/editionsnomades.com/wp-content/uploads/2019/11/effcf684-c6b2-420a-9bf1-9693b72684cf.jpg?w=1500&ssl=1");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.centered {
+  padding-top: 9%;
+  text-align: center;
+}

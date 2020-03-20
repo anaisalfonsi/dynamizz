@@ -532,7 +532,14 @@ footer a:hover {
     box-sizing: border-box;
     width: 50%;
   }
-  
+  .formerror {
+    color: red;
+    font-size: 1rem;
+    width: 75%;
+    margin: 0px auto;
+    padding: 0;
+  }
+
   .form input,
   textarea,
   .button {
