@@ -1,9 +1,16 @@
-<?php include('layouts/header.php'); ?>
+<?php 
+    include('layouts/header.php');
 
-    <div class="form">
+    if(isset($_POST)) {
+        echo "HELLO";
+    }
+
+?>
+
+    <div class="form" method="POST" action="contact.php">
         <h1>Contact us</h1>
-        <input type="email" placeholder="Your Mail">
-        <input type="Name" placeholder="Your Name">
+        <input type="email" placeholder="Your Mail" name="email">
+        <input type="Name" placeholder="Your Name" name ="name">
         <select class="statue">
             <option value="Choice">Take your choice fellow</option>
             <option value="Choice">--Comments--</option>
@@ -22,8 +29,8 @@
             <option value="Choice">--Quotes--</option>
             <option value="Choice">--Comments--</option>
         </select>
-        <textarea placeholder="Your message"></textarea>
-        <div><button class="button">Click Me</button></div>
+        <textarea placeholder="Your message" name="message"></textarea>
+        <div><button class="button" name ="submit">Click Me</button></div>
     </div>
     </form>
     <?php include('layouts/footer.php'); ?>
