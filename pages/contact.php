@@ -79,19 +79,22 @@
                     <div class="contactButt"><button class="button" name ="submit">Click Me</button></div>
                     </div>
             </form> 
-                <?php if(isset($_POST['submit']) && !empty($_POST['submit'])) {} ?>
+            <?php if(isset($_POST['submit'])) {
+                ?>
+                    <div class="successPage">
+                        <h2>👑💀🔥 Success! 🔥💀👑</h2>
+                        <img src="https://media.giphy.com/media/R06XN6UYyU04E/giphy.gif" alt="swag" class="successgif">
+                        <h2>Your message has been sent to our team. We'll reply within 24hrs.</h2>
+                    </div> 
+                        <?php echo '<div class="successPage">' ; ?>
                     <!--header('Location: success.php'); -->
-                            <div class="successPage">
-                            <h2>👑💀🔥 Success! 🔥💀👑</h2>
-                                <img src="https://media.giphy.com/media/R06XN6UYyU04E/giphy.gif" alt="swag" class="successgif">
-                            <h2>Your message has been sent to our team. We'll reply within 24hrs.</h2>
-                            </div>
-            
-                        
-                 ?> 
-                </div>  
-            </div>   
+
+                </div> 
+                <?php 
+            }
+                ?>
+            </div>  
     </div>
 </div>
-     
+       
 <?php include('../layouts/footer.php'); ?>
