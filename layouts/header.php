@@ -29,6 +29,7 @@
                     <li><a href="../pages/ourartists.php" style="text-decoration:none">Discover Artists</a></li>
                     <li><a href="../pages/portrait.php" style="text-decoration:none">Artists Page</a></li>
                     <li><a href="../pages/contact.php" style="text-decoration:none">Contact Us</a></li>
+                    <li><a href="../pages/login.php" style="text-decoration:none">LOGIN</a></li>
                 </ul>
             </nav>
         </div>
@@ -57,6 +58,9 @@
                         </li>
                         <li id="linkNav">
                             <a href="../pages/contact.php" style="text-decoration:none">Contact Us</a>
+                        </li>
+                        <li id="linkNav">
+                            <a href="../pages/login.php" style="text-decoration:none">LOGIN</a>
                         </li>
                     </ul>
                 </div>

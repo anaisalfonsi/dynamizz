@@ -24,7 +24,7 @@
     }
 
 ?>
-    <h1>Contact us</h1>
+    <h1 id="contactus">Contact us</h1>
         <div class="containerForm">
             <form class= "form" method="POST" action="contact.php">
                     <p class = "formerror">
@@ -48,14 +48,15 @@
                     </p>
                 <select class="statue" name ="pickcontact">
                     <option value="NoChoice" name="pickcontact">--Choose your Contact--</option>
-                    <option value="Choice" name="pickcontact">--PixieWilder Team--</option>
-                    <option value="Choice" name="pickcontact">--Artist 1--</option>
-                    <option value="Choice" name="pickcontact">--Artist 2--</option>
-                    <option value="Choice" name="pickcontact">--Artist 3--</option>
-                    <option value="Choice" name="pickcontact">--Artist 4--</option>
-                    <option value="Choice" name="pickcontact">--Artist 5--</option>
-                    <option value="Choice" name="pickcontact">--Artist 6--</option>
-                    <option value="Choice" name="pickcontact">--Artist 7--</option>
+                    <option value="--PixieWilder Team--" name="pickcontact">--PixieWilder Team--</option>
+                    <option value="--Artist 1--" name="pickcontact">--Artist 1--</option>
+                    <option value="--Artist 2--" name="pickcontact">--Artist 2--</option>
+                    <option value="--Artist 3--" name="pickcontact">--Artist 3--</option>
+                    <option value="--Artist 4--" name="pickcontact">--Artist 4--</option>
+                    <option value="--Artist 5--" name="pickcontact">--Artist 5--</option>
+                    <option value="--Artist 6--" name="pickcontact">--Artist 6--</option>
+                    <option value="--Artist 7--" name="pickcontact">--Artist 7--</option>
+                    <?php echo $_GET['pickcontact']; ?>
                 </select>
                         <p class = "formerror">
                             <code>
@@ -75,8 +76,22 @@
                         </code>
                     </p>
                 <textarea placeholder="Your message" name="message" value="<?php if (isset($message)) { echo $message; } ?>"><?php if (isset($message)) { echo $message; } ?></textarea>
-                    <div><button class="button" name ="submit">Click Me</button></div>
+                    <div class="contactButt"><button class="button" name ="submit">Click Me</button></div>
                     </div>
-            </form>      
-        </div>
+            </form> 
+                <?php if(isset($_POST['submit']) && !empty($_POST['submit'])) {} ?>
+                    <!--header('Location: success.php'); -->
+                            <div class="successPage">
+                            <h2>👑💀🔥 Success! 🔥💀👑</h2>
+                                <img src="https://media.giphy.com/media/R06XN6UYyU04E/giphy.gif" alt="swag" class="successgif">
+                            <h2>Your message has been sent to our team. We'll reply within 24hrs.</h2>
+                            </div>
+            
+                        
+                 ?> 
+                </div>  
+            </div>   
+    </div>
+</div>
+     
 <?php include('../layouts/footer.php'); ?>

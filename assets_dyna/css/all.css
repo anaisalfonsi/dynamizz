@@ -514,7 +514,10 @@ footer a:hover {
 
 /* CONTACT FORM */
 
-
+#contactus {
+  margin-top: 15%;
+  text-align: center;
+}
 .contactus {
     font-size: xx-large;
     display: block;
@@ -531,6 +534,9 @@ footer a:hover {
     padding: 1em;
     box-sizing: border-box;
     width: 50%;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 5%;;
   }
   .formerror {
     color: red;
@@ -543,56 +549,56 @@ footer a:hover {
   .form input,
   textarea,
   .button {
-  
     width: 75%;
     box-sizing: border-box;
     margin: 10px auto;
     padding: 1em;
     border-radius: 10px;
-    box-shadow: inset 5px 10px 12px 2px;
   }
-  
+
+  .containerForm {
+    margin: 0px;
+    padding: 0px;
+  }
   .statue {
     margin: 10px 12.5%;
     padding: 1em;
     width: 75%;
     border-radius: 10px;
   }
-  
+  .contactButt {
+    display: flex;
+    justify-content: center;
+  }
   button {
-    margin: 10 auto;
-    padding: 10 auto;
-    display: block;
-    justify-content: space-around;
+    color: #b37cb5;
   }
   
   .button {
-    width: 25%;
-    display: flex;
+    align-content: stretch;
     justify-content: center;
-    font-size: 12px;
+    align-self: baseline;
     cursor: pointer;
     text-align: center;
-    color: black;
-    background-color: linear-gradient(rgba(252, 76, 2, .5), rgba(0, 87, 120, .5));
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px 5px black;
-    transition-property: inset 5s;
-    transition-duration: 5s;
-    
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #613e6e;
+ 
   }
   
   .button:hover,
   .button:focus {
-    color: black;
-    width: 50%;
+    transition-property: outset 3s;
+    transition-duration: 3s;
+    color:#e0cae1;
+    width: 70%;
   
   }
   
   .button:active {
-    transform: translateX(4px);
-    box-shadow: 0 5px whitesmoke;
+    transform: translateX(6px);
     
   }
 /* ATTENTION A CA */
@@ -871,4 +877,126 @@ figure .photo {
         width: 30%;
     }
 
+}
+/* SUCCESS*/
+
+.successPage {
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+/* LOGIN */
+
+#login {
+  text-align: center;
+}
+
+.loginContainer {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin: 5%;
+  margin-top: 15%;
+  margin-bottom: 25%;
+  padding: 0 auto;
+}
+
+.loginForm {
+  margin: 5%;
+}
+
+.loginLabel {
+  padding-left: 10%;
+}
+
+.loginInput {
+  margin: 10%;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-color: #b37cb5;
+  padding: 5%;
+}
+
+.loginButt {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.loginbutton {
+  height : 10%;
+  font-weight: 700;
+  background-color: #e0cae1;
+  color:#613e6e;
+  text-align: center;
+  padding: 2%;
+  font-size: 18px;
+}
+.imgLogin {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 70%;
+}
+@media only screen and (min-width: 320px) and (max-width: 920px) {
+  .loginContainer {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  #login {
+    padding: 0;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    margin-left: -20%;
+    size: 50%;
+  }
+  .loginLabel,
+  .loginInput {
+    width: auto;
+  }
+  .login,
+  .imgLogin {
+    align-self: center;
+  }
+    .imgLogin {
+      margin-top: auto;
+    }
+  .loginButt {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .imgLogin {
+    width: 25%;
+    height: 20%;
+  }
+}
+
+@media only screen and (max-width: 920px) and (max-height: 800px) {
+  .imgLogin{
+    width: 50%;
+  }
+  #login {
+    font-size: 0.8em;
+  }
+  .loginForm {
+    width: 40%;
+  }
+
+  .loginbutton {
+    margin: 0;
+    height: auto;
+    width: auto;
+    font-size: 0.8em;
+  }
 }
